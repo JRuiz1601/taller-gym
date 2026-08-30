@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="7-Rz087-WasCPVCIMRFR">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cliente" parent="1" style="shape=umlActor;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;fontSize=13;" value="Cliente (Postman)" vertex="1">
+          <mxGeometry height="80" width="60" x="395" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="miembros" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" value="Miembros&lt;br&gt;Puerto 8081" vertex="1">
+          <mxGeometry height="70" width="170" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="clases" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" value="Clases&lt;br&gt;Puerto 8082" vertex="1">
+          <mxGeometry height="70" width="170" x="240" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="entrenadores" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" value="Entrenadores&lt;br&gt;Puerto 8083" vertex="1">
+          <mxGeometry height="70" width="170" x="440" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="equipos" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;" value="Equipos&lt;br&gt;Puerto 8084" vertex="1">
+          <mxGeometry height="70" width="170" x="640" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="db_miembros" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#b0e3e6;strokeColor=#0b8299;fontSize=13;" value="miembrosdb" vertex="1">
+          <mxGeometry height="70" width="170" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="db_clases" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#b0e3e6;strokeColor=#0b8299;fontSize=13;" value="clasesdb" vertex="1">
+          <mxGeometry height="70" width="170" x="240" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="db_entrenadores" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#b0e3e6;strokeColor=#0b8299;fontSize=13;" value="entrenadoresdb" vertex="1">
+          <mxGeometry height="70" width="170" x="440" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="db_equipos" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#b0e3e6;strokeColor=#0b8299;fontSize=13;" value="equiposdb" vertex="1">
+          <mxGeometry height="70" width="170" x="640" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="miembros">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="clases">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="entrenadores">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="equipos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="miembros" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="db_miembros">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="clases" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="db_clases">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="entrenadores" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="db_entrenadores">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="equipos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="db_equipos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="clases" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=11;" target="entrenadores" value="REST (opcional)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
